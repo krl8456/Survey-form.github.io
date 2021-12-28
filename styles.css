@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+:root {
+    --white: rgb(243, 243, 243);
+    --dark-blue: rgba(15, 15, 61, 0.651);
+    --grey: rgb(80, 80, 92);
+    --light-green: rgb(58, 173, 110);
+}
+html, body, h1, h2, h3, h4 {
+    margin: 0;
+}
+html, body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    margin: auto;
+    font-family: Poppins;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    color: var(--white);
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    text-align: center;
+    margin-block: 3em;
+}
+#title {
+    font-weight: 500;
+}
+#description {
+    font-style: italic;
+}
+main {
+    box-sizing: border-box;
+    width: 40em;
+    background-color: var(--dark-blue);
+    margin-inline: 3em;
+    padding: 3em 0;
+}
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+input, select, input:focus{
+    color: var(--grey);
+    margin-bottom: 1em;
+}
+input, select{
+    border-radius: 7px;
+    padding: 1em;
+}
+.inline-label {
+    display: inline;
+}
+textarea, input[type="text"], input[type="email"], input[type="number"], input[type="submit"]{
+    width:38em;
+}
+textarea {
+    padding: 1em;
+}
+select, input[type="submit"] {
+    padding-left: 0.8em;
+    width: 40.2em;
+    height: 3.2em;
+}
+input[type="submit"]
+{
+    border-radius: 0;
+    border: 0;
+    display: block;
+    margin-inline: auto;
+    margin-top: 1em;
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+
